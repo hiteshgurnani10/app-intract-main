@@ -45,7 +45,6 @@ function FAQ() {
                     ))}
                 </div>
             </div>
-            <Divider />
         </div>
     );
 }

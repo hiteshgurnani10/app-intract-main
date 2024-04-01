@@ -49,7 +49,9 @@ function Explore() {
                                     onMouseOver={() => setHovered(true)}
                                     onMouseLeave={() => setHovered(false)}
                                     key={index}
-                                    style={{ objectFit: 'contain' }}
+                                    style={{
+                                        objectFit: 'contain',
+                                    }}
                                     className={styles.logo_image}
                                     src={logo}
                                     alt={'logo'}

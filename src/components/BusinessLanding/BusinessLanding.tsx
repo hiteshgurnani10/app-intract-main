@@ -37,7 +37,6 @@ function BusinessLanding() {
             <ThoughLeader />
             <Divider className='my-16 w-full bg-red-300' />
             <FAQ />
-            <Divider />
             {/* <ExploreLast /> */}
         </div>
     );
