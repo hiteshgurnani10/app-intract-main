@@ -8,7 +8,7 @@ function Users() {
             <div className={userstyle.left_transparent_gradient}></div>
             <div className={userstyle.right_transparent_gradient}></div>
             <GenericLayout
-                heading={'(Y)OUR Success Story'}
+                heading={'YOUR Success Story'}
                 subheading={
                     <div className='xs:max-w-[70%] mx-auto xs:mb-24'>
                         <span style={{ color: 'rgba(255, 255, 255, 0.80)' }}>

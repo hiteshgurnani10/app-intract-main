@@ -12,7 +12,7 @@
 .card_subheading {
     color: rgba(255, 255, 255, 0.6);
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-    font-family: 'Outfit';
+    font-family: var(--outfit);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

@@ -84,15 +84,9 @@
     font-size: 240px;
     font-style: normal;
     font-weight: 700;
-    line-height: 240px; /* 100% */
+    line-height: 240px;
     letter-spacing: 0.117px;
-    background: linear-gradient(
-        180deg,
-        #fff 0%,
-        #e1e1e1 48.88%,
-        #a3a3a3 72.01%,
-        #8c8c8c 110.56%
-    );
+    background: linear-gradient(180deg, #fff 0%, #e1e1e1 48.88%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

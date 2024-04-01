@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 6px;
-    color: var(--White-40, rgba(255, 255, 255, 0.4));
+    color: rgba(255, 255, 255, 0.4);
     text-align: center;
     font-family: var(--outfit);
     font-size: 14px;
@@ -49,8 +49,8 @@
     letter-spacing: 0.117px;
     border-radius: 6px;
     max-width: 145px;
-    border: 1px solid var(--Black-20, rgba(0, 0, 0, 0.2));
-    background: var(--White-100, #fff);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
 }
 
 .navbar_content_section {

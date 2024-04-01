@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Outfit';
+    font-family: var(--outfit);
     border-radius: 8px;
     max-height: 32px;
 }
