@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { actionCardDetails } from './utils';
-import valuesCover from './assets/valuescover.svg';
+import valuesCover from './assets/Coverimg.png';
 import ActionCards from './ActionCards/ActionCards';
 import valuesstyle from './values.module.css';
 import GenericLayout from '@/components/genericSection/genericHeadingLayout/GenericLayout';
@@ -12,7 +12,7 @@ function Values() {
     return (
         <article
             className={clsx(
-                'flex flex-col justify-center max-w-[1440px] md:px-12 sm:px-8 px-4',
+                'flex flex-col justify-center max-w-[1440px] md:mt-12',
                 valuesstyle.main
             )}
         >
@@ -33,26 +33,11 @@ function Values() {
                 <Image
                     src={valuesCover}
                     className={clsx(
-                        'rounded-[16px] xs:mt-[24px] md:mt-[56px] w-full object-cover min-h-[230px] max-h-[400px] h-full block'
+                        'rounded-[16px] xs:mt-[24px] md:mt-[56px] w-full object-cover min-h-[230px] md:h-[400px] block'
                     )}
                     alt={'values-cover'}
                 ></Image>
             </div>
-            {/* <div className={valuesstyle.card_style}>
-        {actionCardDetails.map((actionCardDetail, index) => {
-          return (
-            <>
-              <ActionCards
-                key={index}
-                textFlag={index % 2 == 0}
-                src={actionCardDetail.imgUrl}
-                {...actionCardDetail}
-              />
-              <Divider className="md:my-24 xs:hidden md:block" />
-            </>
-          );
-        })}
-      </div> */}
         </article>
     );
 }

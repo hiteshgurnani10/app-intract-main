@@ -5,6 +5,7 @@
     padding: 20px;
     text-align: center;
     background-image: url('./assets/usrs.png');
+    max-width: 1440px;
     background-size: cover;
     background-position: center;
     max-height: 464px;

@@ -6,7 +6,7 @@ import OurProducts from './OurProducts/OurProducts';
 import Values from './Values/Values';
 import PopularQuest from './PopularQuests/PopularQuest';
 import Numbers from './Numbers/Numbers';
-import tear from './assets/tear.svg';
+import tear from './assets/texture.png';
 import Image from 'next/image';
 import Explorer from './Explorer/Explorer';
 import FAQ from './FAQs/FAQ';
@@ -24,7 +24,11 @@ function BusinessLanding() {
             <Divider className='md:my-24 my-16 w-full bg-red-300' />
             <Users />
             <Numbers />
-            <Image src={tear} alt='Tear' className='w-full pt-12 md:pt-10' />
+            <Image
+                src={tear}
+                alt='Tear'
+                className='max-w-[1440px] w-full pt-12 md:pt-10'
+            />
             <Values />
             <Explorer />
             <ThoughLeader />

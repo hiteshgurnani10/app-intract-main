@@ -4,6 +4,7 @@ import { RewardCard } from './RewardCard/RewardCard';
 import mic from './assets/Mic.svg';
 import marketing from './assets/marketing-blog.svg';
 import styles from './thoughleader.module.css';
+import clsx from 'clsx';
 const howToEarnGemsArray = [
     {
         title: 'Podcast',
@@ -21,13 +22,16 @@ const howToEarnGemsArray = [
 
 const ThoughLeader = () => {
     return (
-        <section className={styles.container}>
+        <section
+            className={clsx(
+                styles.container,
+                'max-w-[1440px] mt-[200px] md:mt-[230px]'
+            )}
+        >
             <GenericLayout
                 heading={'Be a Thought Leader'}
                 subheading={
-                    <div className='mx-auto md:mb-24'>
-                        Thought Leadership Blogs
-                    </div>
+                    <div className='mx-auto'>Thought Leadership Blogs</div>
                 }
             />
             <div className={styles.cards_section}>

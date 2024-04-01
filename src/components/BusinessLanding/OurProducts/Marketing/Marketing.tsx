@@ -48,9 +48,9 @@ const Marketing = () => {
                     </div>
                     <div className='bg-[#FFFFFF0D] h-[1px] md:mt-[20px] mt-[10px]'></div>
                 </div>
-                <div className={clsx(styles.statItem, 'col-span-2')}>
+                <div className={clsx(styles.statItem, 'col-span-2 ')}>
                     <h2 className={styles.headings}>Intract Website</h2>
-                    <div className='flex items-end gap-[8px]'>
+                    <div className='flex items-end gap-x-[8px]'>
                         <p className={styles.numbers}>100K+</p>
                         <p className={styles.impressions}>Daily Quester</p>
                     </div>
