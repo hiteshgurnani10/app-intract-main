@@ -41,7 +41,7 @@
     text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
     -webkit-text-stroke-width: 1;
     -webkit-text-stroke-color: #000;
-    font-family: Outfit;
+    font-family: var(--outfit);
     font-size: 96px;
     font-style: normal;
     font-weight: 600;
@@ -115,7 +115,7 @@
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
-    font-family: Outfit;
+    font-family: var(--outfit);
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -185,7 +185,7 @@
         text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
         -webkit-text-stroke-width: 0.5;
         -webkit-text-stroke-color: #000;
-        font-family: Outfit;
+        font-family: var(--outfit);
         font-size: calc(48px + 4vw);
         font-style: normal;
         font-weight: 600;
@@ -207,7 +207,7 @@
         color: rgba(255, 255, 255, 0.6);
         text-align: center;
         text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
-        font-family: Outfit;
+        font-family: var(--outfit);
         font-size: calc(16px + 0.5vw);
         margin-top: 5%;
         font-style: normal;
@@ -219,7 +219,7 @@
         color: rgba(255, 255, 255, 0.4);
         text-align: center;
         text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
-        font-family: Outfit;
+        font-family: var(--outfit);
         font-size: 16px;
         font-style: normal;
         font-weight: 500;

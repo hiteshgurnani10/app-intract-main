@@ -1,15 +1,15 @@
 .heading {
-    color: rgba(255, 255, 255, 0.80);
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
-    font-family: Outfit;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-family: var(--outfit);
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: unset !important; /* 125% */
     letter-spacing: 0.117px;
-} 
-.description {  
-    color: rgba(255, 255, 255, 0.40);
+}
+.description {
+    color: rgba(255, 255, 255, 0.4);
     font-family: 'Outfit';
     font-size: 16px;
     font-style: normal;
@@ -18,9 +18,9 @@
     letter-spacing: 0.117px;
 }
 .learnmore {
-    color: rgba(255, 255, 255, 0.40);
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
-    font-family: Outfit;
+    color: rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-family: var(--outfit);
     font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 120% */
@@ -28,8 +28,8 @@
     text-decoration-line: underline;
 }
 .highlight {
-    color: rgba(255, 255, 255, 0.80);
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Outfit';
     font-size: 16px;
     font-style: normal;
@@ -48,12 +48,11 @@
     flex-direction: column;
 }
 
-
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
     .action_card {
         display: grid;
         grid-template-columns: 1fr 1.5fr;
-        gap:5rem
+        gap: 5rem;
     }
     .suppported_text_flag {
         margin-top: 16px;
@@ -61,10 +60,10 @@
     .action_card_flip {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
-        gap:5rem
+        gap: 5rem;
     }
     .firstItem {
-        order:1;
+        order: 1;
         text-align: left;
     }
     .action_card_addded {
@@ -81,9 +80,9 @@
         gap: 3rem;
     }
     .highlight {
-        color: rgba(255, 255, 255, 0.80);
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
-        font-family: Outfit;
+        color: rgba(255, 255, 255, 0.8);
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        font-family: var(--outfit);
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
@@ -91,8 +90,8 @@
         letter-spacing: 0.117px;
     }
     .description {
-        color: rgba(255, 255, 255, 0.40);
-        font-family: Outfit;
+        color: rgba(255, 255, 255, 0.4);
+        font-family: var(--outfit);
         font-size: 20px;
         font-style: normal;
         font-weight: 500;

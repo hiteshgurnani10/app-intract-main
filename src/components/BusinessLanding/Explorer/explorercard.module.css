@@ -13,7 +13,7 @@
 .heading {
     color: rgba(255, 255, 255, 0.6);
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    font-family: Outfit;
+    font-family: var(--outfit);
     font-size: 24px;
     font-style: normal;
     max-width: 90%;
@@ -24,7 +24,7 @@
 .highlighted {
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    font-family: Outfit;
+    font-family: var(--outfit);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -57,7 +57,7 @@
 .explorer_name {
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    font-family: Outfit;
+    font-family: var(--outfit);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -67,7 +67,7 @@
 .explorer_designation {
     color: rgba(255, 255, 255, 0.4);
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    font-family: Outfit;
+    font-family: var(--outfit);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -76,7 +76,7 @@
 }
 .remaining {
     color: rgba(255, 255, 255, 0.3);
-    font-family: Outfit;
+    font-family: var(--outfit);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -106,7 +106,7 @@
     .highlight_subheading {
         color: rgba(255, 255, 255, 0.6);
         text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-        font-family: Outfit;
+        font-family: var(--outfit);
         font-size: 16px;
         font-style: normal;
         font-weight: 400;

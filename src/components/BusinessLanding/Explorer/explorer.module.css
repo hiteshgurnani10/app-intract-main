@@ -1,8 +1,8 @@
 .highlighted {
-    color: rgba(255, 255, 255, 0.80);
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
-    font-family: Outfit;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-family: var(--outfit);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -10,17 +10,17 @@
     letter-spacing: 0.117px;
 }
 
-@media (min-width:700px) {
+@media (min-width: 700px) {
     /* .bgimg {
         background-image: url('./assets/grid.png');
         height: 100;
         border:1px solid red
     } */
     .highlighted {
-        color: rgba(255, 255, 255, 0.80);
+        color: rgba(255, 255, 255, 0.8);
         text-align: center;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
-        font-family: Outfit;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        font-family: var(--outfit);
         font-size: 24px;
         font-style: normal;
         font-weight: 500;

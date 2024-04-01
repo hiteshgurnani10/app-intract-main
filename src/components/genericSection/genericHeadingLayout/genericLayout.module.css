@@ -15,7 +15,7 @@
     color: rgba(255, 255, 255, 0.4);
     text-align: center;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    font-family: Outfit;
+    font-family: var(--outfit);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -52,7 +52,7 @@
         color: rgba(255, 255, 255, 0.4);
         text-align: center;
         text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-        font-family: Outfit;
+        font-family: var(--outfit);
         font-size: 20px;
         font-style: normal;
         font-weight: 500;

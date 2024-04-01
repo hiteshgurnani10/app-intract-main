@@ -80,7 +80,7 @@
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     -webkit-text-stroke-width: 2;
     -webkit-text-stroke-color: #000;
-    font-family: Outfit;
+    font-family: var(--outfit);
     font-size: 240px;
     font-style: normal;
     font-weight: 700;
@@ -101,7 +101,7 @@
 .user_text {
     text-align: center;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    font-family: Outfit;
+    font-family: var(--outfit);
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -125,7 +125,7 @@
         text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
         -webkit-text-stroke-width: 1;
         -webkit-text-stroke-color: #000;
-        font-family: Outfit;
+        font-family: var(--outfit);
         font-size: 120px;
         font-style: normal;
         font-weight: 700;
@@ -136,7 +136,7 @@
     .user_text {
         text-align: center;
         text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-        font-family: Outfit;
+        font-family: var(--outfit);
         font-size: 32px;
         font-style: normal;
         font-weight: 600;
