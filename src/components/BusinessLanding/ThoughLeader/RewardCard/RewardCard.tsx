@@ -5,6 +5,7 @@ import Image from 'next/image';
 import mic from '../assets/Mic.svg';
 import marketing from '../assets/marketing-blog.svg';
 import diagonal from '../assets/diagonal-arrow.svg';
+import clsx from 'clsx';
 export const RewardCard = ({
     key,
     title,
@@ -18,6 +19,7 @@ export const RewardCard = ({
 }) => {
     const [isHovered, setIsHovered] = useState(false);
     const descriptionRef = useRef<any>(null);
+    const imgref = useRef<any>(null);
 
     useEffect(() => {
         onHoverOut();
@@ -57,15 +59,26 @@ export const RewardCard = ({
                             alt='mic'
                             className={rewardCardStyles.card_img}
                         />
+
                         <div className={rewardCardStyles.title}>
-                            {title}
-                            <Image
-                                alt='diagonal'
-                                src={diagonal}
-                                width={20}
-                                height={20}
-                                className='flex-shrink-0'
-                            />
+                            <div className='flex flex-col'>
+                                <div
+                                    className={clsx(rewardCardStyles.divider)}
+                                ></div>
+                                <div className='flex md:mt-[16px] gap-[4px] '>
+                                    {title}
+                                    <Image
+                                        alt='diagonal'
+                                        src={diagonal}
+                                        ref={imgref}
+                                        width={20}
+                                        height={20}
+                                        className={
+                                            rewardCardStyles.related_image
+                                        }
+                                    />
+                                </div>
+                            </div>
                         </div>
 
                         <div
