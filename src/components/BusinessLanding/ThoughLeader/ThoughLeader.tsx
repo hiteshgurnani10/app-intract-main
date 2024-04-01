@@ -1,7 +1,7 @@
 import GenericLayout from '@/components/genericSection/genericHeadingLayout/GenericLayout';
 import gempsDropsPng from '../../assets/gem-drops.png';
 import { RewardCard } from './RewardCard/RewardCard';
-import mic from './assets/Mic.svg';
+import mic from './assets/Frame 19.png';
 import marketing from './assets/marketing-blog.svg';
 import styles from './thoughleader.module.css';
 import clsx from 'clsx';

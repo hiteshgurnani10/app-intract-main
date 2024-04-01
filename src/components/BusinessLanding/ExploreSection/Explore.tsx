@@ -14,6 +14,7 @@ import zksync from './partnerLogos/zksync.png';
 import mode from './partnerLogos/mode.png';
 import polygon from './partnerLogos/polygon.png';
 import Marquee from 'react-fast-marquee';
+import hero from './assets/Hero.png';
 import image1 from '../../BusinessLanding/assets/ecosystemLogos/Linea.svg';
 import image2 from '../../BusinessLanding/assets/ecosystemLogos/blast.png';
 import image3 from '../../BusinessLanding/assets/ecosystemLogos/zksync.svg';
@@ -22,11 +23,13 @@ function Explore() {
     const [hovered, setHovered] = useState(false);
     return (
         <div className={styles.exploreSection}>
-            <section className={styles.glow_effect} />
             <div className={clsx(styles.content, 'relative')}>
-                <h1 className={styles.headline}>
-                    Unleash your <br /> Web3 Growth
-                </h1>
+                <div className={styles.bg_image}></div>
+                <Image
+                    src={hero}
+                    alt={'hero'}
+                    className='md:w-[667px] md:h-[208px] w-[333px] h-[104px]'
+                ></Image>
                 <p className={styles.description}>
                     Access world’s first bot-less community of 5M+ <br />{' '}
                     On-Chain users with our quest platform
@@ -46,7 +49,7 @@ function Explore() {
                                     onMouseOver={() => setHovered(true)}
                                     onMouseLeave={() => setHovered(false)}
                                     key={index}
-                                    style={{ aspectRatio: '1/1' }}
+                                    style={{ objectFit: 'contain' }}
                                     className={styles.logo_image}
                                     src={logo}
                                     alt={'logo'}

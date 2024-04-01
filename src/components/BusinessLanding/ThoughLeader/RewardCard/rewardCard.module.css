@@ -41,7 +41,6 @@
 
     border-radius: 1000px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
     justify-self: end;
     align-self: end;
     position: relative;
