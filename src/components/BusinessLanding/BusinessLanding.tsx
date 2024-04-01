@@ -19,7 +19,10 @@ function BusinessLanding() {
     return (
         <div className={businessLandingStyles.container}>
             <Explore />
-            <Divider className='md:mb-24 md:-mt-16 my-16 w-full bg-red-300' />
+            <Divider
+                hasdividerglow={true}
+                className='md:mb-24 md:-mt-16 my-16 w-full bg-red-300'
+            />
             <OurProducts />
             <Divider className='md:my-24 my-16 w-full bg-red-300' />
             <Users />

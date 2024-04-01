@@ -1,11 +1,18 @@
 .container {
-	border-radius: 1000px;
-	background: rgba(255, 255, 255, 0.15);
-	height: 1px;
-	max-width: 1440px;
-	margin-left: auto;
-	margin-right: auto;
+    border-radius: 1000px;
+    background: rgba(255, 255, 255, 0.15);
+    height: 1px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
-@media (min-width:1000px) {
-	
-} 
+.glow_effect {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    margin-top: -96px;
+    background: linear-gradient(to bottom, #ffffffcc, #ffffff0d);
+    width: 100%;
+    opacity: 0.01;
+}

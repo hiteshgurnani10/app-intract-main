@@ -5,6 +5,8 @@ import clsx from 'clsx';
 function Users() {
     return (
         <article className={clsx('relative', userstyle.main_users_article)}>
+            <div className={userstyle.left_transparent_gradient}></div>
+            <div className={userstyle.right_transparent_gradient}></div>
             <GenericLayout
                 heading={'(Y)OUR Success Story'}
                 subheading={
