@@ -25,11 +25,9 @@ function Explore() {
         <div className={styles.exploreSection}>
             <div className={clsx(styles.content, 'relative')}>
                 <div className={styles.bg_image}></div>
-                <Image
-                    src={hero}
-                    alt={'hero'}
-                    className='md:w-[667px] md:h-[208px] w-[333px] h-[104px]'
-                ></Image>
+                <p className={styles.headline}>
+                    Unleash your <br /> Web3 Growth
+                </p>
                 <p className={styles.description}>
                     Access world’s first bot-less community of 5M+ <br />{' '}
                     On-Chain users with our quest platform
