@@ -16,12 +16,13 @@ import Users from './Users/Users';
 import ThoughLeader from './ThoughLeader/ThoughLeader';
 
 function BusinessLanding() {
+    const videoSrc = new URL('./assets/hero.mp4', import.meta.url).href;
     return (
         <div className={businessLandingStyles.container}>
             <Explore />
             <Divider
                 hasdividerglow={true}
-                className='md:mb-24 md:-mt-16 my-16 w-full bg-red-300'
+                className='md:mb-24 mb-16 w-full bg-red-300 '
             />
             <OurProducts />
             <Divider className='md:my-24 my-16 w-full bg-red-300' />

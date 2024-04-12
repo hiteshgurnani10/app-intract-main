@@ -11,14 +11,19 @@ import img from './assets/grid.png';
 import 'swiper/css/pagination';
 import Image from 'next/image';
 import SliderButtons from '@/ui-components/swiper/SliderButtons';
-
+import img1 from '../assets/Clutch.jpg'
+import img2 from '../assets/Interport.jpg'
+import img3 from '../assets/Linea.jpg'
+import img4 from '../assets/Rango Review.jpg'
 function Explorer() {
     const arr = [
         {
             id: 1,
             title: 'ARE AWESOME',
             tagline: 'NEXTJS 13 & SWIPER SLIDER',
-            image: '/image1.jpg',
+            image: img1,
+            name:'Santosh Yellajosula',
+            designation: 'Clutch',
             buttons: [
                 {
                     id: 1,
@@ -32,7 +37,41 @@ function Explorer() {
             id: 2,
             title: 'GIVE IT A SHOOT',
             tagline: 'IF YOU LIKE IT',
-            image: '/image2.jpg',
+            image: img2,
+            name:'NZ',
+            designation: 'Interport',
+            buttons: [
+                {
+                    id: 1,
+                    text: 'Julia M Cameron',
+                    link: 'https://www.pexels.com/@julia-m-cameron/',
+                    type: 'btn-dark btn-circle',
+                },
+            ],
+        },
+        {
+            id: 3,
+            title: 'GIVE IT A SHOOT',
+            tagline: 'IF YOU LIKE IT',
+            image: img3,
+            name:'Marko Monaco',
+            designation: 'Linea',
+            buttons: [
+                {
+                    id: 1,
+                    text: 'Julia M Cameron',
+                    link: 'https://www.pexels.com/@julia-m-cameron/',
+                    type: 'btn-dark btn-circle',
+                },
+            ],
+        },
+        {
+            id: 4,
+            title: 'GIVE IT A SHOOT',
+            tagline: 'IF YOU LIKE IT',
+            image: img4,
+            name:'Martin',
+            designation: 'Rango Exchange',
             buttons: [
                 {
                     id: 1,
@@ -87,9 +126,9 @@ function Explorer() {
                         },
                     }}
                 >
-                    {arr.map(({ id, image, tagline, title, buttons }) => (
+                    {arr.map(({ id, image, tagline, title, buttons , name , designation }) => (
                         <SwiperSlide key={id}>
-                            <ExplorerCard />
+                            <ExplorerCard img={image} name={name} designation={designation}  />
                         </SwiperSlide>
                     ))}
                 </Swiper>

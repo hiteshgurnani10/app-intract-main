@@ -36,7 +36,7 @@ const SinglePoint: FC<ISinglePoint> = (props) => {
     const { title, index, setActiveIndexValue, progress, setProgress } = props;
     useEffect(() => {
         let intervalId: any;
-        const increment = 100 / 500;
+        const increment = 100 / 300;
 
         if (progress < 100) {
             intervalId = setInterval(() => {
@@ -62,6 +62,7 @@ const SinglePoint: FC<ISinglePoint> = (props) => {
         <article
             className='flex flex-col md:gap-[8px] xs:gap-[12px] cursor-pointer'
             onClick={() => handleClick(index)}
+            key={index}
         >
             <div className='flex justify-between'>
                 <p

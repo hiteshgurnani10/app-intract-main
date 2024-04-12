@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import golive from '../assets/goliveforfree.png';
 import SinglePoint from './SinglePoint';
 import style from './singlepoint.module.css';
-function SliderComponent() {
-    const [activeIndexValue, setActiveIndexValue] = React.useState(0);
+function SliderComponent({activeIndexValue , setActiveIndexValue}:{activeIndexValue:any , setActiveIndexValue:any}) {
+    //const [activeIndexValue, setActiveIndexValue] = React.useState(0);
     const [progress, setProgress] = useState(0);
     const questingarr = [
         {
@@ -46,7 +46,7 @@ function SliderComponent() {
         },
     ];
     return (
-        <article className='flex flex-col md:gap-[24px] mt-8 xs:gap-[30px]'>
+        <article key={activeIndexValue} className='flex flex-col md:gap-[24px] mt-8 xs:gap-[30px]'>
             {questingarr.map((questingElment, index) => {
                 return (
                     <SinglePoint

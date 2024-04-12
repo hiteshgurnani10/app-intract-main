@@ -87,10 +87,40 @@
 .bend {
     position: absolute;
     width: 100%;
-    margin-top: -1.2rem;
+    margin-top: -1.1rem;
     margin-left: 3.3rem;
+    z-index: 1;
+}
+
+.glow_effect {
+    height: 96px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+        to top,
+        #0E0E0E,
+        #ffffff0d
+    );
+    width: 100%;
+    opacity: 1;
     z-index: 1000;
 }
+
+.glow_effect_top {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(
+        to bottom,
+        #ffffffcc,
+        #ffffff0d
+    );
+    width: 100%;
+    opacity: 0.2;
+    z-index: 1000;
+    filter: blur(10px);
+}
+
 @media (min-width: 700px) {
     .highlighted {
         color: rgba(255, 255, 255, 0.8);

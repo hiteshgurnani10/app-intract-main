@@ -30,11 +30,13 @@ const Profile = ({
         </article>
     );
 };
-function ExplorerCard() {
+function ExplorerCard({img , name , designation}:{img:any , name:string , designation:string}) {
     return (
         <div className={explorercss.explorercss}>
             <div className={explorercss.inner_card}>
-                <Image className='w-full h-full' src={ss} alt={''}></Image>
+                <Image className='w-full h-full' src={img} alt={''}></Image>
+                <div className={explorercss.glow_effect}></div>
+                <div className={explorercss.glow_effect_top}></div>
             </div>
             <div className={explorercss.bend}>
                 <Image src={bend} alt='bend' />
@@ -42,8 +44,8 @@ function ExplorerCard() {
             <div>
                 <Profile
                     imgUrl={profile}
-                    name={'Manoj Kumar'}
-                    designation={'VP zomato'}
+                    name={name}
+                    designation={designation}
                 />
             </div>
         </div>

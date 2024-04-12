@@ -1,5 +1,5 @@
 import GenericLayout from '@/components/genericSection/genericHeadingLayout/GenericLayout';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ourproductStyles from './ourproducts.module.css';
 import Image from 'next/image';
 import image from '../assets/Grids.png';
@@ -12,6 +12,22 @@ import SliderComponent from './SliderComponent/SliderComponent';
 import ProgressComponent from './SliderComponent/ProgressComponent';
 import Marketing from './Marketing/Marketing';
 function OurProducts() {
+    const [activeIndexValue, setActiveIndexValue] = React.useState(0);
+    const [videoClass, setVideoClass] = useState(ourproductStyles.fadeIn); 
+    const videoSrc0 = new URL('./assets/0th.mp4', import.meta.url).href;
+    const videoSrc1 = new URL('./assets/1st.mp4', import.meta.url).href;
+    const videoSrc2 = new URL('./assets/2nd.mp4', import.meta.url).href;
+    const videoSrc3 = new URL('./assets/3rd.mp4', import.meta.url).href;
+    const videoSrc4 = new URL('./assets/4th.mp4', import.meta.url).href;
+    const videoSrc5 = new URL('./assets/5th.mp4', import.meta.url).href;
+    const videos = [videoSrc0, videoSrc1, videoSrc2, videoSrc3, videoSrc4, videoSrc5];
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setVideoClass(ourproductStyles.fadeIn);
+        }, 1000);
+
+        return () => clearTimeout(timeoutId);
+    }, [activeIndexValue]);
     return (
         <div className='max-w-[1440px] h-full md:px-12 sm:px-8 px-4'>
             <GenericLayout
@@ -43,13 +59,14 @@ function OurProducts() {
                         <div className={ourproductStyles.card_heading}>
                             Questing
                         </div>
-                        <SliderComponent />
+                        <SliderComponent activeIndexValue={activeIndexValue} setActiveIndexValue={setActiveIndexValue}/>
                     </article>
-                    <Image
-                        src={questing}
-                        alt='questing'
-                        className='w-full h-auto xs:w-full xs:mt-12 object-cover rounded-[8px] sm:mt-12 md:mt-0 relative'
-                    />
+                    <div className={'w-full h-auto xs:w-full xs:mt-12 object-cover rounded-[8px] sm:mt-12 md:mt-0 relative'} >
+                        <video key={videos[activeIndexValue]} autoPlay muted loop id="backgroundVideo" className={clsx(videoClass,ourproductStyles.video)} style={{ width: "100%", height: "100%", objectFit: "cover" , borderRadius:'20px' }}>
+                            <source src={videos[activeIndexValue]} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
             </section>
             <SubCards />
