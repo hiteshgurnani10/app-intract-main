@@ -89,11 +89,10 @@ function Explorer() {
                 heading={'Hear what our partners say about us'}
                 className='md:mt-24'
                 subheading={
-                    <div className='sm:max-w-[70%]'>
+                    <div className='sm:max-w-[100%]'>
                         <span style={{ color: 'rgba(255, 255, 255, 0.80)' }}>
-                            Real Stories, Real Experiences -
+                            Real Stories, Real Experiences
                         </span>
-                        <span>Our Partners Share Their Quest Journeys</span>
                     </div>
                 }
             />
