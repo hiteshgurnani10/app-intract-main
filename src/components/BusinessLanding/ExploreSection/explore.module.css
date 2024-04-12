@@ -117,12 +117,12 @@
 
 .glow_effect {
     width: 100%;
-    height: 40px;
-    filter: blur(15px);
-    margin-bottom: -20px;
-    background: linear-gradient(to top, rgba(8, 8, 8, 1) 50%, #080808 100%);
+    height: 50px;
+    filter: blur(20px);
+    background: linear-gradient(to top, #080808 80% , #7c19c345);
     position: absolute;
-    transform: translate(0%);
+    opacity: 1;
+    transform: translate(0% , 60%);
     bottom: 0;
     z-index: 1000;
 }
