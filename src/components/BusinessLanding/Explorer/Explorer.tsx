@@ -115,7 +115,7 @@ function Explorer() {
                             slidesPerView: 3,
                             spaceBetween: 16,
                         },
-                        700: {
+                        600: {
                             slidesPerView: 2,
                             spaceBetween: 16,
                         },

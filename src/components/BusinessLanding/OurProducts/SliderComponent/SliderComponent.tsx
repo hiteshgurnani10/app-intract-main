@@ -2,19 +2,9 @@ import React, { useState } from 'react';
 import golive from '../assets/goliveforfree.png';
 import SinglePoint from './SinglePoint';
 import style from './singlepoint.module.css';
-function SliderComponent({activeIndexValue , setActiveIndexValue}:{activeIndexValue:any , setActiveIndexValue:any}) {
-    //const [activeIndexValue, setActiveIndexValue] = React.useState(0);
+function SliderComponent({activeIndexValue , setActiveIndexValue}:{activeIndexValue:any , setActiveIndexValue:React.Dispatch<React.SetStateAction<number>>}) {
     const [progress, setProgress] = useState(0);
     const questingarr = [
-        {
-            title: (
-                <div>
-                    <span>{`Go live for`}</span>{' '}
-                    <span className={style.exclusive}>FREE</span>
-                </div>
-            ),
-            img: golive,
-        },
         {
             title: <div>{'Intuitive interface to create and edit Quests'}</div>,
             img: golive,

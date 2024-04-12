@@ -33,10 +33,10 @@ const ProgressBar = ({ progress }) => {
     );
 };
 const SinglePoint: FC<ISinglePoint> = (props) => {
-    const { title, index, setActiveIndexValue, progress, setProgress } = props;
+    const { title, index, setActiveIndexValue, progress, setProgress , activeIndexValue } = props;
     useEffect(() => {
         let intervalId: any;
-        const increment = 100 / 300;
+        const increment = 100 / 400;
 
         if (progress < 100) {
             intervalId = setInterval(() => {
@@ -48,7 +48,7 @@ const SinglePoint: FC<ISinglePoint> = (props) => {
         } else {
             clearInterval(intervalId);
             setProgress(0);
-            setActiveIndexValue((current) => (current + 1) % 5);
+            setActiveIndexValue((activeIndexValue+1)%5);
         }
 
         return () => clearInterval(intervalId);
@@ -69,7 +69,7 @@ const SinglePoint: FC<ISinglePoint> = (props) => {
                     className={clsx(
                         singlepointstyle.title,
                         `${
-                            index == props.activeIndexValue
+                            index == activeIndexValue
                                 ? singlepointstyle.title_active
                                 : ''
                         }`
@@ -79,10 +79,10 @@ const SinglePoint: FC<ISinglePoint> = (props) => {
                 </p>
                 <Image src={arrow} width={12} height={16} alt={'arrow'}></Image>
             </div>
-            {index === props.activeIndexValue && (
-                <ProgressBar progress={progress} />
+            {index === activeIndexValue && (
+                <ProgressBar key={activeIndexValue} progress={progress} />
             )}
-            {index != props.activeIndexValue && (
+            {index != activeIndexValue && (
                 <div className={singlepointstyle.progress}></div>
             )}
         </article>

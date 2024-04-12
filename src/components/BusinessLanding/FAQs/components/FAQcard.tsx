@@ -5,6 +5,7 @@ import Image from "next/image";
 import AnimateHeight from "react-animate-height";
 import FaqText from "./FaqText.tsx/FaqText";
 import clsx from "clsx";
+import { isMobile } from "react-device-detect";
 interface IFAQcard {
   text: string;
   index: number;
@@ -42,7 +43,7 @@ const FAQcard: FC<IFAQcard> = (props) => {
             />
           </div>
         </div>
-        <AnimateHeight height={open ? 180 : 0} duration={300}>
+        <AnimateHeight height={open ? (isMobile ? 200 : 180) : 0} duration={300}>
           <div className="flex flex-col">
             <FaqText text={subtext[0]} />
             <p className={clsx("mt-[24px]", faqcard.explore_more)}>
