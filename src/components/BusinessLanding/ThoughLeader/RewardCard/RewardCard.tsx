@@ -23,7 +23,17 @@ export const RewardCard = ({
     const descriptionRef = useRef<any>(null);
     const imgref = useRef<any>(null);
 
-    const handleButtonClick = () => {
+    const handleButtonClick = (event: React.MouseEvent<HTMLDivElement>) => {
+        event.preventDefault();
+        window.open(link, '_blank');
+    };
+
+    const handleTouchStart = () => {
+        setIsHovered(true);
+    };
+
+    const handleTouchEnd = () => {
+        setIsHovered(false);
         window.open(link, '_blank');
     };
     
@@ -55,6 +65,8 @@ export const RewardCard = ({
         <div
             onMouseEnter={onHoverIn}
             onMouseLeave={onHoverOut}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
             className={rewardCardStyles.container}
             onClick={handleButtonClick}
         >
