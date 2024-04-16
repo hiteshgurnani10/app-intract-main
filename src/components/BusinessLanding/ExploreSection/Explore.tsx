@@ -44,7 +44,7 @@ function Explore() {
                 </p>
                 <p className={styles.description}>
                     Access world’s first bot-less community of 5M+ <br />{' '}
-                    On-Chain users with our quest platform
+                    on-chain users with our quest platform
                 </p>
                 <Button
                     onclick={handleButtonClick}
