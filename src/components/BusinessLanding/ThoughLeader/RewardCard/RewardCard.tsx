@@ -11,15 +11,22 @@ export const RewardCard = ({
     title,
     description,
     image,
+    link
 }: {
     key: number;
     title: ReactNode;
     description: ReactNode;
     image: any;
+    link:any;
 }) => {
     const [isHovered, setIsHovered] = useState(false);
     const descriptionRef = useRef<any>(null);
     const imgref = useRef<any>(null);
+
+    const handleButtonClick = () => {
+        window.open(link, '_blank');
+    };
+    
 
     useEffect(() => {
         onHoverOut();
@@ -49,6 +56,7 @@ export const RewardCard = ({
             onMouseEnter={onHoverIn}
             onMouseLeave={onHoverOut}
             className={rewardCardStyles.container}
+            onClick={handleButtonClick}
         >
             {/* {image && cloneElement(image, { isHovered })} */}
             <div className={rewardCardStyles.content_container}>

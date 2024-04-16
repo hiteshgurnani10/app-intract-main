@@ -9,15 +9,17 @@ import { Divider } from '@/ui-components/divider/Divider';
 const howToEarnGemsArray = [
     {
         title: 'Podcast',
+        link:'https://open.spotify.com/show/40sCgrg26jFDN3i3WsHB5D',
         image: mic,
         description:
-            'Refer and earn gems effortlessly by inviting friends to join the adventure! and watch your gem collection grow infinitely',
+            'Tune in to our podcasts for insights on Web3 growth from leading voices at Axie, Ava, Sushiswap, Lido, and many more',
     },
     {
         title: 'Leadership Blog',
+        link:'https://www.blogs.intract.io/',
         image: marketing,
         description:
-            'Earn Gems by completing weekly streaks and unlock exclusive rewards',
+            'Explore the latest in Web3 growth with us. Your ultimate guide to mastering web3 growth.',
     },
 ];
 
@@ -42,6 +44,7 @@ const ThoughLeader = () => {
                     <RewardCard
                         key={index}
                         image={howToEarnGems.image}
+                        link={howToEarnGems.link}
                         title={<div>{howToEarnGems.title}</div>}
                         description={<div>{howToEarnGems.description}</div>}
                     />
