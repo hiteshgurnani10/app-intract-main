@@ -24,7 +24,7 @@ function Explore() {
     const [hovered, setHovered] = useState(false);
     const router = useRouter();
     const handleButtonClick = () => {
-        window.location.href = 'https://app.intract.io/';
+        window.open('https://app.intract.io/', '_blank');
     };
     const videoSrc = new URL('./assets/hero_main.mp4', import.meta.url).href;
     return (

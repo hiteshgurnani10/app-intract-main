@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation';
 export const Navbar = () => {
     const router = useRouter();
     const handleButtonClick = () => {
-        window.location.href = 'https://app.intract.io/';
+        window.open('https://app.intract.io/', '_blank');
     };
     return (
         <>
