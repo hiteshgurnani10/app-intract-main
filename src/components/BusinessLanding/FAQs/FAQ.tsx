@@ -9,20 +9,23 @@ import clsx from 'clsx';
 function FAQ() {
     let FAQ = [
         {
-            text: 'What is a Quest on our platform?',
+            text: 'Why Intract ?',
         },
         {
-            text: 'How do I earn rewards on your plat..',
+            text: 'What is the cost of launching a quest on Intract?',
         },
         {
-            text: 'What kind of products are featured?',
+            text: 'Will Intract assist in marketing our quest?',
         },
         {
-            text: 'How do I contact customer support?',
+            text: 'How many users can a project expect to attract through their quest?',
         },
         {
-            text: 'How can I track my progress?',
+            text: 'How can we obtain co-marketing support to boost our campaign on Intract?',
         },
+        {
+            text: 'Where are the users on the Intract platform located?'
+        }
     ];
     return (
         <div className='md:mt-[96px] relative max-w-[1440px] w-full flex flex-col justify-between md:px-12 sm:px-8 px-4'>

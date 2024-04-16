@@ -5,11 +5,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import intractImg from './assets/intract.svg';
 import Button from '@/ui-components/button/Button';
+import { useRouter } from 'next/navigation';
 export const Navbar = () => {
-    // const pathname = useLocation().pathname;
-    // const handleScrollToTop = () => {
-    // 	window.scrollTo({ top: 0, behavior: 'smooth' });
-    // };
+    const router = useRouter();
+    const handleButtonClick = () => {
+        window.location.href = 'https://app.intract.io/';
+    };
     return (
         <>
             <header
@@ -37,14 +38,16 @@ export const Navbar = () => {
                     </Link>
                 </div>
                 <div className='flex gap-4 absolute md:right-[120px] xs:right-1'>
-                    <Button
+                    {/* <Button
                         className={navbarStyles.singin_button}
                         name={'Sign in'}
-                    />
+                    /> */}
                     <Button
+                        onclick={handleButtonClick}
                         className={navbarStyles.create_quest_button}
-                        name={'Create Quest'}
-                    />
+                        name={'Sign in'}
+                    >
+                    </Button>
                 </div>
             </header>
         </>

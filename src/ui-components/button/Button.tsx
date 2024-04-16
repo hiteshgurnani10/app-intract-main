@@ -11,6 +11,7 @@ interface IButtonProps {
   className: string;
   name: string;
   hasImg?: boolean;
+  onclick?: () => any;
 }
 
 const Button: FC<IButtonProps> = (props) => {
@@ -22,6 +23,7 @@ const Button: FC<IButtonProps> = (props) => {
         "flex gap-2",
         props.className,
       )}
+      onClick={props.onclick}
     >
       {props.name}
       {props.hasImg && (

@@ -18,9 +18,14 @@ import hero from './assets/Hero.png';
 import image1 from '../../BusinessLanding/assets/ecosystemLogos/Linea.svg';
 import image2 from '../../BusinessLanding/assets/ecosystemLogos/blast.png';
 import image3 from '../../BusinessLanding/assets/ecosystemLogos/zksync.svg';
+import { useRouter } from 'next/navigation';
 function Explore() {
     const [play, setPlay] = React.useState(false);
     const [hovered, setHovered] = useState(false);
+    const router = useRouter();
+    const handleButtonClick = () => {
+        window.location.href = 'https://app.intract.io/';
+    };
     const videoSrc = new URL('./assets/hero_main.mp4', import.meta.url).href;
     return (
         <div className={styles.exploreSection}>
@@ -42,6 +47,7 @@ function Explore() {
                     On-Chain users with our quest platform
                 </p>
                 <Button
+                    onclick={handleButtonClick}
                     className={clsx(styles.exploreButton, 'cursor-pointer')}
                     name='Explore'
                 ></Button>

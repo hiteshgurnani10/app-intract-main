@@ -45,7 +45,7 @@ const Web3CommunityCard = () => {
                         )}
                     ></div>
                 </div>
-                <div className={styles.points}>SCAM Filtering</div>
+                <div className={styles.points} style={{ display:'flex' , gap:'5px' }}><div style={{ color:'red' }}>SCAM</div> Filtering</div>
             </div>
             {/* <div className='flex flex-col h-full w-full border border-solid border-red-200'>
                 <div className={styles.points}>

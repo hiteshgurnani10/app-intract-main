@@ -61,3 +61,10 @@
         letter-spacing: 0.117px;
     }
 }
+
+
+@media (max-width:640px) {
+    .button_bg {
+        visibility: hidden;
+    }
+}

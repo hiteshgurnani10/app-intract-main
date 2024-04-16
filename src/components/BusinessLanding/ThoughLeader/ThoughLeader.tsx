@@ -29,7 +29,7 @@ const ThoughLeader = () => {
                 'max-w-[1440px] mt-[200px] md:mt-[230px]'
             )}
         >
-            <Divider className='my-32 w-full bg-red-300' />
+            <Divider className='-mt-16 mb-16 w-full bg-red-300' />
             <GenericLayout
                 heading={'Be a Thought Leader'}
                 subheading={
