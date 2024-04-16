@@ -5,6 +5,7 @@ import mic from './assets/Frame 19.png';
 import marketing from './assets/marketing-blog.svg';
 import styles from './thoughleader.module.css';
 import clsx from 'clsx';
+import { Divider } from '@/ui-components/divider/Divider';
 const howToEarnGemsArray = [
     {
         title: 'Podcast',
@@ -28,10 +29,12 @@ const ThoughLeader = () => {
                 'max-w-[1440px] mt-[200px] md:mt-[230px]'
             )}
         >
+            <Divider className='my-32 w-full bg-red-300' />
             <GenericLayout
                 heading={'Be a Thought Leader'}
                 subheading={
-                    <div className='mx-auto'>Thought Leadership Blogs</div>
+                    // <div className='mx-auto'>Thought Leadership Blogs</div>
+                    <></>
                 }
             />
             <div className={styles.cards_section}>

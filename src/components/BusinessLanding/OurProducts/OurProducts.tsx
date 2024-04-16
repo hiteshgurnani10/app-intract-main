@@ -69,7 +69,7 @@ function OurProducts() {
                         <SliderComponent activeIndexValue={activeIndexValue} setActiveIndexValue={setActiveIndexValue}/>
                     </article>
                     <div className={'w-full h-auto xs:w-full xs:mt-12 object-cover rounded-[8px] sm:mt-12 md:mt-0 relative'} >
-                        <video poster={posters[activeIndexValue].src} key={activeIndexValue} autoPlay muted loop id="backgroundVideo" className={clsx(videoClass,ourproductStyles.video)} style={{ width: "100%", height: "100%", objectFit: "cover" , borderRadius:'20px' }}>
+                        <video poster={posters[activeIndexValue].src} key={activeIndexValue} autoPlay muted id="backgroundVideo" className={clsx(videoClass,ourproductStyles.video)} style={{ width: "100%", height: "100%", objectFit: "cover" , borderRadius:'20px' }}>
                             <source key={activeIndexValue} src={videos[activeIndexValue]} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>

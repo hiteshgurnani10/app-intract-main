@@ -36,7 +36,7 @@ const SinglePoint: FC<ISinglePoint> = (props) => {
     const { title, index, setActiveIndexValue, progress, setProgress , activeIndexValue } = props;
     useEffect(() => {
         let intervalId: any;
-        const increment = 100 / 400;
+        const increment = 100 / 550;
 
         if (progress < 100) {
             intervalId = setInterval(() => {

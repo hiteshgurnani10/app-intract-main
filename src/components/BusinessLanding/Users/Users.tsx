@@ -11,9 +11,9 @@ function Users() {
                 heading={'(Y)OUR Success Story'}
                 subheading={
                     <div className='xs:max-w-[100%] mx-auto xs:mb-24'>
-                        <span style={{ color: 'rgba(255, 255, 255, 0.80)' }}>
+                        {/* <span style={{ color: 'rgba(255, 255, 255, 0.80)' }}>
                             Real Stories, Real Experiences
-                        </span>
+                        </span> */}
                         {/* <span>Our Users Share Their Quest Journeys</span> */}
                     </div>
                 }
