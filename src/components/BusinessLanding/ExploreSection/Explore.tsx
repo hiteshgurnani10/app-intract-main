@@ -21,7 +21,7 @@ import image3 from '../../BusinessLanding/assets/ecosystemLogos/zksync.svg';
 function Explore() {
     const [play, setPlay] = React.useState(false);
     const [hovered, setHovered] = useState(false);
-    const videoSrc = new URL('./assets/hero.mp4', import.meta.url).href;
+    const videoSrc = new URL('./assets/hero_main.mp4', import.meta.url).href;
     return (
         <div className={styles.exploreSection}>
               <div className={styles.video_container}>

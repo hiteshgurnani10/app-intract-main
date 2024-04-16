@@ -8,13 +8,13 @@ function Users() {
             <div className={userstyle.left_transparent_gradient}></div>
             <div className={userstyle.right_transparent_gradient}></div>
             <GenericLayout
-                heading={'YOUR Success Story'}
+                heading={'(Y)OUR Success Story'}
                 subheading={
-                    <div className='xs:max-w-[70%] mx-auto xs:mb-24'>
+                    <div className='xs:max-w-[100%] mx-auto xs:mb-24'>
                         <span style={{ color: 'rgba(255, 255, 255, 0.80)' }}>
-                            Real Stories, Real Experiences –
+                            Real Stories, Real Experiences
                         </span>
-                        <span>Our Users Share Their Quest Journeys</span>
+                        {/* <span>Our Users Share Their Quest Journeys</span> */}
                     </div>
                 }
             />

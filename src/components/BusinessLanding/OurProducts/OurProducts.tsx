@@ -15,11 +15,11 @@ function OurProducts() {
     const [activeIndexValue, setActiveIndexValue] = React.useState(0);
     const [videoClass, setVideoClass] = useState(ourproductStyles.fadeIn); 
     //const videoSrc0 = new URL('./assets/0th.mp4', import.meta.url).href;
-    const videoSrc0 = new URL('./assets/1st.mp4', import.meta.url).href;
-    const videoSrc1 = new URL('./assets/2nd.mp4', import.meta.url).href;
-    const videoSrc2 = new URL('./assets/3rd.mp4', import.meta.url).href;
-    const videoSrc3 = new URL('./assets/4th.mp4', import.meta.url).href;
-    const videoSrc4 = new URL('./assets/5th.mp4', import.meta.url).href;
+    const videoSrc0 = new URL('./assets/0.mp4', import.meta.url).href;
+    const videoSrc1 = new URL('./assets/1.mp4', import.meta.url).href;
+    const videoSrc2 = new URL('./assets/2.mp4', import.meta.url).href;
+    const videoSrc3 = new URL('./assets/3.mp4', import.meta.url).href;
+    const videoSrc4 = new URL('./assets/4.mp4', import.meta.url).href;
     const videos = [videoSrc0, videoSrc1, videoSrc2, videoSrc3, videoSrc4];
     useEffect(() => {
         const timeoutId = setTimeout(() => {

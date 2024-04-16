@@ -15,6 +15,7 @@
     border-radius: 16px;
     animation: card_animation 1s ease-in-out;
     transition: transform 0.3s ease;
+    max-width: 600px;
 }
 
 .card_subheading {
