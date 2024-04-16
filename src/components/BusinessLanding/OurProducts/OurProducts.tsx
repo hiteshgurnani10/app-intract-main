@@ -11,6 +11,12 @@ import SubCards from './SubCards';
 import SliderComponent from './SliderComponent/SliderComponent';
 import ProgressComponent from './SliderComponent/ProgressComponent';
 import Marketing from './Marketing/Marketing';
+
+import poster1 from './assets/posters/0.jpg';
+import poster2 from './assets/posters/1.jpg';
+import poster3 from './assets/posters/2.jpg';
+import poster4 from './assets/posters/3.jpg';
+import poster5 from './assets/posters/0.jpg';
 function OurProducts() {
     const [activeIndexValue, setActiveIndexValue] = React.useState(0);
     const [videoClass, setVideoClass] = useState(ourproductStyles.fadeIn); 
@@ -21,6 +27,7 @@ function OurProducts() {
     const videoSrc3 = new URL('./assets/3.mp4', import.meta.url).href;
     const videoSrc4 = new URL('./assets/4.mp4', import.meta.url).href;
     const videos = [videoSrc0, videoSrc1, videoSrc2, videoSrc3, videoSrc4];
+    const posters = [ poster1, poster2, poster3, poster4, poster5];
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             setVideoClass(ourproductStyles.fadeIn);
@@ -62,7 +69,7 @@ function OurProducts() {
                         <SliderComponent activeIndexValue={activeIndexValue} setActiveIndexValue={setActiveIndexValue}/>
                     </article>
                     <div className={'w-full h-auto xs:w-full xs:mt-12 object-cover rounded-[8px] sm:mt-12 md:mt-0 relative'} >
-                        <video key={activeIndexValue} autoPlay muted loop id="backgroundVideo" className={clsx(videoClass,ourproductStyles.video)} style={{ width: "100%", height: "100%", objectFit: "cover" , borderRadius:'20px' }}>
+                        <video poster={posters[activeIndexValue].src} key={activeIndexValue} autoPlay muted loop id="backgroundVideo" className={clsx(videoClass,ourproductStyles.video)} style={{ width: "100%", height: "100%", objectFit: "cover" , borderRadius:'20px' }}>
                             <source key={activeIndexValue} src={videos[activeIndexValue]} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
