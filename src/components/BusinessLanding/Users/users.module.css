@@ -98,7 +98,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: 50px; /* 125% */
-    -webkit-text-stroke: 1.5px #000;
     letter-spacing: 0.117px;
     color: linear-gradient(180deg, #fff 0%, #e1e1e1 48.88%);
 }
