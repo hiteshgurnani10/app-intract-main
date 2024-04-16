@@ -12,14 +12,14 @@ function Values() {
     return (
         <article
             className={clsx(
-                'flex flex-col justify-center max-w-[1440px] md:mt-12',
+                'flex flex-col justify-center max-w-[1440px] md:mt-12 mt-12',
                 valuesstyle.main
             )}
         >
             <GenericLayout
                 heading={'Some popular quests'}
                 subheading={
-                    <div className='max-w-[900px]'>
+                    <div className='w-[400px] md:w-[900px]'>
                         <span style={{ color: 'rgba(255, 255, 255, 0.80)' }}>
                             Enriching experiences, meaningful rewards, and
                             empowering tools
